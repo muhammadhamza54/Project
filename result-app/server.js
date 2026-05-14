@@ -4,7 +4,7 @@ const { Pool } = require('pg');
 const app = express();
 
 const pool = new Pool({
-    connectionString: 'postgres://postgres:postgrespassword@db:5432/postgres'
+connectionString: 'postgres://postgres:123456789@db:5432/postgres'
 });
 
 app.use(express.static(__dirname + '/views'));
