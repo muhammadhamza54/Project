@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: result
-        image: server
+        image: server:latest
         imagePullPolicy: Never
         ports:
         - containerPort: 80

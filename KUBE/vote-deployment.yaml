@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: vote
-        image: voting-app-container
+        image: voting-app-container:latest
         imagePullPolicy: Never
         ports:
         - containerPort: 80
