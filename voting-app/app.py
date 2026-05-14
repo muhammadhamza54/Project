@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, make_response
 from redis import Redis
 import os, random
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 # Connects to the Redis container using its Kubernetes Service discovery DNS name
 redis = Redis(host="redis", db=0, socket_timeout=5)
 
